@@ -589,7 +589,8 @@
 把每天出现的新崩溃记录下来 。
 
 背景描述客户前阵子，让做一个APP，一开始最低版本要求是ios 8,运行一切正常，但是他们公司有个员工水果机是iPhone5 系统ios 7.1，为了兼容这个同事，我不得不把最低版本降低。于是乎，发现一个奇葩崩溃。
-NSString containsString的
+NSString containsString的方法，最低版本支持到ios 8!!!
+解决方案：123456789if ([[[UIDevice currentDevice] systemVersion] floatValue] &gt;= 8) &#123;       if (result &amp;&amp; [result containsString:@&quot;ok&quot;]) &#123;                           &#125;   &
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -761,8 +762,10 @@ NSString containsString的
 
 
 swifit修改1searchField.setValue(UIColor.whiteColor(), forKeyPath: &quot;_placeholderLabel.textColor&quot;)
-oc修改1[searchField setValue:[UIColor
-          ...
+oc修改1[searchField setValue:[UIColor whiteColor] forKey:@&quot;_placeholderLabel.textColor&quot;];
+
+
+          
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2016/04/20/UITextfield-修改placeholder字体颜色/#more" rel="contents">
