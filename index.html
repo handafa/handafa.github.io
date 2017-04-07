@@ -585,20 +585,14 @@
       
         
           
-          
-把每天出现的新崩溃记录下来 。
+            <blockquote>
+<p>把每天出现的新崩溃记录下来 。</p>
+</blockquote>
+<h4 id="背景描述"><a href="#背景描述" class="headerlink" title="背景描述"></a>背景描述</h4><p>客户前阵子，让做一个APP，一开始最低版本要求是ios 8,运行一切正常，但是他们公司有个员工水果机是iPhone5 系统ios 7.1，为了兼容这个同事，我不得不把最低版本降低。于是乎，发现一个奇葩崩溃。</p>
+<p><strong>NSString containsString</strong>的方法，最低版本支持到ios 8!!!</p>
+<h5 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">if ([[[UIDevice currentDevice] systemVersion] floatValue] &gt;= 8) &#123;</div><div class="line">       if (result &amp;&amp; [result containsString:@&quot;ok&quot;]) &#123;</div><div class="line">                   </div><div class="line">        &#125;</div><div class="line">   &#125;else&#123;</div><div class="line">       if (result &amp;&amp; ([result rangeOfString:@&quot;ok&quot;].length &gt; 0)) &#123;</div><div class="line">                   </div><div class="line">     &#125;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
 
-背景描述客户前阵子，让做一个APP，一开始最低版本要求是ios 8,运行一切正常，但是他们公司有个员工水果机是iPhone5 系统ios 7.1，为了兼容这个同事，我不得不把最低版本降低。于是乎，发现一个奇葩崩溃。
-NSString containsString的方法，最低版本支持到ios 8!!!
-解决方案：123456789if ([[[UIDevice currentDevice] systemVersion] floatValue] &gt;= 8) &#123;       if (result &amp;&amp; [result containsString:@&quot;ok&quot;]) &#123;                           &#125;   &
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/05/15/NSString-containsString-最低版本ios-8/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
@@ -757,22 +751,15 @@ NSString containsString的方法，最低版本支持到ios 8!!!
       
         
           
+            <blockquote>
+<p>纯粹个人记录</p>
+</blockquote>
+<hr>
+<h4 id="swifit修改"><a href="#swifit修改" class="headerlink" title="swifit修改"></a>swifit修改</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">searchField.setValue(UIColor.whiteColor(), forKeyPath: &quot;_placeholderLabel.textColor&quot;)</div></pre></td></tr></table></figure>
+<h4 id="oc修改"><a href="#oc修改" class="headerlink" title="oc修改"></a>oc修改</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[searchField setValue:[UIColor whiteColor] forKey:@&quot;_placeholderLabel.textColor&quot;];</div></pre></td></tr></table></figure>
+<hr>
+
           
-纯粹个人记录
-
-
-swifit修改1searchField.setValue(UIColor.whiteColor(), forKeyPath: &quot;_placeholderLabel.textColor&quot;)
-oc修改1[searchField setValue:[UIColor whiteColor] forKey:@&quot;_placeholderLabel.textColor&quot;];
-
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/04/20/UITextfield-修改placeholder字体颜色/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
