@@ -1699,7 +1699,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff080f;
+  background: #afe50f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2865,4 +2865,16 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
+}
+.post-comments-count a::before {
+  content: "评论";
+}
+#yun-tie-sdk-wrap .input-box .tie-submit-row .tie-submit-btn {
+  background-color: #649ab6;
+}
+#yun-tie-sdk-wrap .input-box .tie-submit-row .tie-submit-btn:hover {
+  background-color: #4c618f;
+}
+.tie-empty-tip {
+  display: none;
 }
