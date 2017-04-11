@@ -289,6 +289,186 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="handafa.top/2017/04/11/微信小程序（2）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="韩大发">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="浮屠">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/11/微信小程序（2）/" itemprop="url">
+                  微信小程序（2）
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-11T00:00:00+08:00">
+                2017-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/微信小程序笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">微信小程序笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/04/11/微信小程序（2）/" class="leancloud_visitors" data-flag-title="微信小程序（2）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>参考 <a href="http://bbs.larkapp.com/forum.php?mod=viewthread&amp;tid=9120">微信小程序之生命周期</a></p>
+<p>通俗的讲，生命周期就是指一个对象的生老病死。 从软件的角度来看，生命周期指程序从创建、到开始、暂停、唤起、停止、卸载的过程。</p>
+</blockquote>
+<hr>
+<h1 id="微信小程序生命周期"><a href="#微信小程序生命周期" class="headerlink" title="微信小程序生命周期"></a>微信小程序生命周期</h1><h2 id="1-应用的生命周期"><a href="#1-应用的生命周期" class="headerlink" title="1.应用的生命周期"></a>1.应用的生命周期</h2><ol>
+<li>用户首次打开小程序，触发 onLaunch（全局只触发一次）。</li>
+<li>小程序初始化完成后，触发onShow方法，监听小程序显示。</li>
+<li>小程序从前台进入后台，触发 onHide方法。</li>
+<li>小程序从后台进入前台显示，触发 onShow方法。</li>
+<li><p>小程序后台运行一定时间，或系统资源占用过高，会被销毁。</p>
+<p> <img src="http://oo0p3pcit.bkt.clouddn.com/%E5%BA%94%E7%94%A8%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.jpg" alt="image"></p>
+</li>
+</ol>
+<blockquote>
+<p>前台、后台定义： 当用户点击左上角关闭，或者按了设备Home键离开微信，小程序并没有直接销毁，而是进入了后台；当再次进入微信或再次打开小程序，又会从后台进入前台。</p>
+</blockquote>
+<h2 id="2-页面的生命周期"><a href="#2-页面的生命周期" class="headerlink" title="2.页面的生命周期"></a>2.页面的生命周期</h2><ol>
+<li>小程序注册完成后，加载页面，触发onLoad方法。</li>
+<li>页面载入后触发onShow方法，显示页面。</li>
+<li>首次显示页面，会触发onReady方法，渲染页面元素和样式，一个页面只会调用一次。</li>
+<li>当小程序后台运行或跳转到其他页面时，触发onHide方法。</li>
+<li>当小程序有后台进入到前台运行或重新进入页面时，触发onShow方法。</li>
+<li>当使用重定向方法wx.redirectTo(OBJECT)或关闭当前页返回上一页wx.navigateBack()，触发onUnload</li>
+</ol>
+<p><img src="http://oo0p3pcit.bkt.clouddn.com/%E9%A1%B5%E9%9D%A2%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.jpg" alt="image"></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/11/微信小程序（2）/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="handafa.top/2017/04/07/微信小程序（1）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -804,7 +984,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
