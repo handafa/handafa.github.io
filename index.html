@@ -398,9 +398,8 @@
 
       
         
-          
-            <blockquote>
-<p>参考 <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html" target="_blank" rel="external">微信小程序之事件</a></p>
+          <blockquote>
+<p>参考 <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html">微信小程序之事件</a></p>
 </blockquote>
 <h1 id="微信小程序之触控事件"><a href="#微信小程序之触控事件" class="headerlink" title="微信小程序之触控事件"></a>微信小程序之触控事件</h1><h2 id="什么是事件"><a href="#什么是事件" class="headerlink" title="什么是事件"></a>什么是事件</h2><ul>
 <li>事件是视图层到逻辑层的通讯方式。</li>
@@ -462,52 +461,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>注：除上表之外的其他组件自定义事件如无特殊申明都是非冒泡事件，如<form>的submit事件，<input>的input事件，<scroll-view>的scroll事件</scroll-view></form></strong></p>
-<h3 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h3><p>事件绑定的写法同组件的属性，以 key、value 的形式。</p>
-<ul>
-<li>key 以bind或catch开头，然后跟上事件的类型，如bindtap, catchtouchstart</li>
-<li>value 是一个字符串，需要在对应的 Page 中定义同名的函数。不然当触发事件的时候会报错。bind事件绑定不会阻止冒泡事件向上冒泡，catch事件绑定可以阻止冒泡事件向上冒泡。</li>
-</ul>
-<p>如在下边这个例子中，点击 inner view 会先后触发handleTap3和handleTap2(因为tap事件会冒泡到 middle view，而 middle view 阻止了 tap 事件冒泡，不再向父节点传递)，点击 middle view 会触发handleTap2，点击 outter view 会触发handleTap1。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;view id=&quot;outter&quot; bindtap=&quot;handleTap1&quot;&gt;</div><div class="line">  outer view</div><div class="line">  &lt;view id=&quot;middle&quot; catchtap=&quot;handleTap2&quot;&gt;</div><div class="line">    middle view</div><div class="line">    &lt;view id=&quot;inner&quot; bindtap=&quot;handleTap3&quot;&gt;</div><div class="line">      inner view</div><div class="line">    &lt;/view&gt;</div><div class="line">  &lt;/view&gt;</div><div class="line">&lt;/view&gt;</div></pre></td></tr></table></figure>
-<h3 id="事件对象"><a href="#事件对象" class="headerlink" title="事件对象"></a>事件对象</h3><p>如无特殊说明，当组件触发事件时，逻辑层绑定该事件的处理函数会收到一个事件对象。</p>
-<p><strong>BaseEvent 基础事件对象属性列表</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>类型</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>type</td>
-<td>String</td>
-<td>事件类型</td>
-</tr>
-<tr>
-<td>timeStamp</td>
-<td>Integer</td>
-<td>事件生成时的时间戳</td>
-</tr>
-<tr>
-<td>target</td>
-<td>Object</td>
-<td>触发事件的组件的一些属性值集合</td>
-</tr>
-<tr>
-<td>currentTarget</td>
-<td>Object</td>
-<td>当前组件的一些属性值集合</td>
-</tr>
-</tbody>
-</table>
-<p><strong>CustomEvent 自定义事件对象属性列表（继承 BaseEvent）：</strong><br>属性 | 类型 | 说明<br>—|—|—<br>detail | Object | 额外的信息</p>
-<p><strong>TouchEvent 触摸事件对象属性列表（继承 BaseEvent）：</strong><br>属性 | 类型 | 说明<br>—|—|—<br>touches | Array | 触摸事件，当前停留在屏幕中的触摸点信息的数组<br>changedTouches | Array | 触摸事件，当前变化的触摸点信息的数组</p>
-<p>具体属性意义参考<a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/index.md" target="_blank" rel="external">API</a></p>
-
-          
+<blockquote>
+<p><strong>注：除上表之外的其他组件自定义事件如无特殊申明都是非冒泡事件，如<form />的submit事件，<input />的input事件，<scroll-view/>的scroll事件</strong></p>
+</blockquote>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/12/微信小程序（3）/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

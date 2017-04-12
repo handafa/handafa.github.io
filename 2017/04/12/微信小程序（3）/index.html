@@ -113,7 +113,7 @@
 事件的使用方式
 在组件中绑定一个事件处理函数。
  如bindtap，当用户点击该组件的时候会在该页面对应的Pa">
-<meta property="og:updated_time" content="2017-04-12T13:05:24.536Z">
+<meta property="og:updated_time" content="2017-04-12T13:18:59.834Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序（3）">
 <meta name="twitter:description" content="参考 微信小程序之事件
@@ -501,7 +501,10 @@
 </tr>
 </tbody>
 </table>
+<blockquote>
 <p><strong>注：除上表之外的其他组件自定义事件如无特殊申明都是非冒泡事件，如<form>的submit事件，<input>的input事件，<scroll-view>的scroll事件</scroll-view></form></strong></p>
+</blockquote>
+<a id="more"></a>
 <h3 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h3><p>事件绑定的写法同组件的属性，以 key、value 的形式。</p>
 <ul>
 <li>key 以bind或catch开头，然后跟上事件的类型，如bindtap, catchtouchstart</li>
@@ -542,8 +545,45 @@
 </tr>
 </tbody>
 </table>
-<p><strong>CustomEvent 自定义事件对象属性列表（继承 BaseEvent）：</strong><br>属性 | 类型 | 说明<br>—|—|—<br>detail | Object | 额外的信息</p>
-<p><strong>TouchEvent 触摸事件对象属性列表（继承 BaseEvent）：</strong><br>属性 | 类型 | 说明<br>—|—|—<br>touches | Array | 触摸事件，当前停留在屏幕中的触摸点信息的数组<br>changedTouches | Array | 触摸事件，当前变化的触摸点信息的数组</p>
+<p><strong>CustomEvent 自定义事件对象属性列表（继承 BaseEvent）：</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detail</td>
+<td>Object</td>
+<td>额外的信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>TouchEvent 触摸事件对象属性列表（继承 BaseEvent）：</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>touches</td>
+<td>Array</td>
+<td>触摸事件，当前停留在屏幕中的触摸点信息的数组</td>
+</tr>
+<tr>
+<td>changedTouches</td>
+<td>Array</td>
+<td>触摸事件，当前变化的触摸点信息的数组</td>
+</tr>
+</tbody>
+</table>
 <p>具体属性意义参考<a href="https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/index.md" target="_blank" rel="external">API</a></p>
 
       
