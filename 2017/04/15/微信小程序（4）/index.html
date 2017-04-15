@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="韩大发" />
+  <meta name="keywords" content="微信小程序," />
 
 
 
@@ -87,15 +87,59 @@
 
 
 
-<meta name="description" content="的确平凡 绝不平庸">
-<meta property="og:type" content="website">
-<meta property="og:title" content="浮屠">
-<meta property="og:url" content="handafa.top/archives/index.html">
+<meta name="description" content="参考 微信小程序之数据绑定
+
+微信小程序之数据绑定数据视图绑定
+
+做前WEB前端，，假如jQuery，需要手动管理视图和对象的数据一致性。
+微信小程序是通过状态模式-单向数据流来管理视图和对象绑定。简单的讲，对象状态化，只要对象状态发送变化，就通知页面更新视图元素。
+
+主要有以下三个步骤：
+
+识别哪个UI元素被绑定了相应的对象。 
+监视对象状态的变化。 
+将所有变化传播到绑定的视图上。
+
+wxm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信小程序（4）">
+<meta property="og:url" content="handafa.top/2017/04/15/微信小程序（4）/index.html">
 <meta property="og:site_name" content="浮屠">
-<meta property="og:description" content="的确平凡 绝不平庸">
+<meta property="og:description" content="参考 微信小程序之数据绑定
+
+微信小程序之数据绑定数据视图绑定
+
+做前WEB前端，，假如jQuery，需要手动管理视图和对象的数据一致性。
+微信小程序是通过状态模式-单向数据流来管理视图和对象绑定。简单的讲，对象状态化，只要对象状态发送变化，就通知页面更新视图元素。
+
+主要有以下三个步骤：
+
+识别哪个UI元素被绑定了相应的对象。 
+监视对象状态的变化。 
+将所有变化传播到绑定的视图上。
+
+wxm">
+<meta property="og:image" content="http://oo0p3pcit.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B9%8B%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A1.jpg">
+<meta property="og:image" content="http://oo0p3pcit.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B9%8B%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A2.jpg">
+<meta property="og:image" content="http://oo0p3pcit.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B9%8B%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A3.jpg">
+<meta property="og:updated_time" content="2017-04-15T13:44:23.596Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浮屠">
-<meta name="twitter:description" content="的确平凡 绝不平庸">
+<meta name="twitter:title" content="微信小程序（4）">
+<meta name="twitter:description" content="参考 微信小程序之数据绑定
+
+微信小程序之数据绑定数据视图绑定
+
+做前WEB前端，，假如jQuery，需要手动管理视图和对象的数据一致性。
+微信小程序是通过状态模式-单向数据流来管理视图和对象绑定。简单的讲，对象状态化，只要对象状态发送变化，就通知页面更新视图元素。
+
+主要有以下三个步骤：
+
+识别哪个UI元素被绑定了相应的对象。 
+监视对象状态的变化。 
+将所有变化传播到绑定的视图上。
+
+wxm">
+<meta name="twitter:image" content="http://oo0p3pcit.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B9%8B%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A1.jpg">
 
 
 
@@ -123,13 +167,13 @@
 
 
 
-  <link rel="canonical" href="handafa.top/archives/"/>
+  <link rel="canonical" href="handafa.top/2017/04/15/微信小程序（4）/"/>
 
 
 
 
 
-  <title> 归档 | 浮屠 </title>
+  <title> 微信小程序（4） | 浮屠 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -163,7 +207,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -277,256 +321,221 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 6 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/15/微信小程序（4）/" itemprop="url">
-              
-                <span itemprop="name">微信小程序（4）</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-15T00:00:00+08:00"
-              content="2017-04-15" >
-          04-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/12/微信小程序（3）/" itemprop="url">
-              
-                <span itemprop="name">微信小程序（3）</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-12T00:00:00+08:00"
-              content="2017-04-12" >
-          04-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/11/微信小程序（2）/" itemprop="url">
-              
-                <span itemprop="name">微信小程序（2）</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-11T00:00:00+08:00"
-              content="2017-04-11" >
-          04-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/07/微信小程序（1）/" itemprop="url">
-              
-                <span itemprop="name">微信小程序（1）</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-07T14:02:43+08:00"
-              content="2017-04-07" >
-          04-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/15/NSString-containsString-最低版本ios-8/" itemprop="url">
-              
-                <span itemprop="name">NSString containsString 最低版本ios 8</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-15T20:37:00+08:00"
-              content="2016-05-15" >
-          05-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/20/UITextfield-修改placeholder字体颜色/" itemprop="url">
-              
-                <span itemprop="name">UITextfield 修改placeholder字体颜色</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-20T09:02:43+08:00"
-              content="2016-04-20" >
-          04-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="handafa.top/2017/04/15/微信小程序（4）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="韩大发">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="浮屠">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                微信小程序（4）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-15T00:00:00+08:00">
+                2017-04-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/微信小程序笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">微信小程序笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/04/15/微信小程序（4）/" class="leancloud_visitors" data-flag-title="微信小程序（4）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>参考 <a href="http://bbs.larkapp.com/forum.php?mod=viewthread&amp;tid=9122" target="_blank" rel="external">微信小程序之数据绑定</a></p>
+</blockquote>
+<h1 id="微信小程序之数据绑定"><a href="#微信小程序之数据绑定" class="headerlink" title="微信小程序之数据绑定"></a>微信小程序之数据绑定</h1><h2 id="数据视图绑定"><a href="#数据视图绑定" class="headerlink" title="数据视图绑定"></a>数据视图绑定</h2><p><img src="http://oo0p3pcit.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B9%8B%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A1.jpg" alt="image"></p>
+<ul>
+<li>做前WEB前端，，假如jQuery，需要手动管理视图和对象的数据一致性。</li>
+<li>微信小程序是通过状态模式-单向数据流来管理视图和对象绑定。简单的讲，对象状态化，只要对象状态发送变化，就通知页面更新视图元素。</li>
+</ul>
+<p>主要有以下三个步骤：</p>
+<ol>
+<li>识别哪个UI元素被绑定了相应的对象。 </li>
+<li>监视对象状态的变化。 </li>
+<li>将所有变化传播到绑定的视图上。</li>
+</ol>
+<p><strong>wxml</strong>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;view&gt; &#123;&#123; message &#125;&#125; &lt;/view&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>js</strong>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Page(&#123;</div><div class="line"></div><div class="line"> data: &#123;</div><div class="line"></div><div class="line">   message: &apos;Hello,World!&apos;</div><div class="line"></div><div class="line"> &#125;</div><div class="line"></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>仅仅通过数据更新视图是不够的，用户操作引起视图更新，数据怎么同步呢？这里要区分的是，用户触发事件不仅要考虑当前UI元素更新，还会通过当前元素更新其他视图。所以视图上的数据都必须用过事件传递给对象，只有用户操作视图，才能获取到数据，并更新对象状态。 </p>
+<p>如下图：<br><img src="http://oo0p3pcit.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B9%8B%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A2.jpg" alt="image"></p>
+<a id="more"></a>
+<p>事件是视图层到逻辑层的通讯方式。</p>
+<p>视图与视图之间是如何影响，如下图:</p>
+<p><img src="http://oo0p3pcit.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B9%8B%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A3.jpg" alt="image"></p>
+<p>流程说明： </p>
+<ol>
+<li>视图A由于用户操作，触发事件A </li>
+<li>事件A处理函数中，更新对象A和对象B的状态 </li>
+<li>由于对象A和B状态变化，通知视图A和B更新<br>我们以用户登录为例，用户点击(事件A)登录按钮后，把按钮变成禁用不可点(视图A)，同时弹出等待框(视图B).<br>部分代码如下：</li>
+</ol>
+<p><strong>wxml</strong>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;view&gt;</div><div class="line"> </div><div class="line">   &lt;loading hidden=&quot;&#123;&#123;loadingHidden&#125;&#125;&quot;&gt;正在登录...&lt;/loading&gt;</div><div class="line"> </div><div class="line">   &lt;button type=&quot;primary&quot; size=&quot;default&quot; disabled=&quot;&#123;&#123;disabled&#125;&#125;&quot; bindtap=&quot;loginBtn&quot;&gt;数据请求&lt;/button&gt;</div><div class="line"> </div><div class="line">&lt;/view&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>js</strong>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">Page(&#123;</div><div class="line"> </div><div class="line"> data:&#123;</div><div class="line"> </div><div class="line">   disabled: false,</div><div class="line"> </div><div class="line">   loadingHidden: true</div><div class="line"> </div><div class="line"> &#125;,</div><div class="line"> </div><div class="line"> //按钮事件</div><div class="line"> </div><div class="line"> loginBtn: function(event)&#123;</div><div class="line"> </div><div class="line">   //禁用按钮</div><div class="line"> </div><div class="line">   this.setData(&#123;disabled: true&#125;);</div><div class="line"> </div><div class="line">   //弹出正在登录框</div><div class="line"> </div><div class="line">   this.setData(&#123;loadingHidden: false&#125;);</div><div class="line"> </div><div class="line"> &#125;</div><div class="line"> </div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>总体来说，小程序数据视图单向绑定开发模式，让开发者专注于事件处理上，改变对象状态，实现视图更新。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/微信小程序/" rel="tag"># 微信小程序</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/12/微信小程序（3）/" rel="next" title="微信小程序（3）">
+                <i class="fa fa-chevron-left"></i> 微信小程序（3）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=2127583" async = "async" ></script>
+</div>
+
+      
+    </div>
+  </div>
 
           
           </div>
@@ -534,6 +543,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+    
+  </div>
+
 
         </div>
         
@@ -553,8 +568,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -650,6 +674,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#微信小程序之数据绑定"><span class="nav-number">1.</span> <span class="nav-text">微信小程序之数据绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据视图绑定"><span class="nav-number">1.1.</span> <span class="nav-text">数据视图绑定</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -767,11 +807,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
@@ -805,6 +843,10 @@
   
     
 
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2127583"></script>
+      <!-- UY END -->
     
   
 
